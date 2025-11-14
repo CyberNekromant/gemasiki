@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетрис</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>?? Тетрис</h1>
+        <div class="score-board">
+            <div>Счет: <span id="score">0</span></div>
+            <div>Рекорд: <span id="high-score">0</span></div>
+        </div>
+    </header>
+    
+    <main class="game-container">
+        <canvas id="game-canvas" width="320" height="640"></canvas>
+        <div class="controls">
+            <p>Управление: < > для движения, ^ для поворота, v для ускорения</p>
+        </div>
+        <button class="back-btn" onclick="location.href='../index.html'">Назад на главную</button>
+        <div id="game-over" class="game-over" style="display:none;">
+            <h2>Игра окончена!</h2>
+            <p>Ваш счет: <span id="final-score">0</span></p>
+            <button class="back-btn" onclick="restartGame()">Начать заново</button>
+        </div>
+    </main>
+
+    <script src="../js/tetris.js"></script>
+</body>
+</html>
