@@ -2,32 +2,43 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бильярд</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>?? Бильярд</h1>
+        <h1>Бильярд</h1>
         <div class="score-board">
-            <div>Счет: <span id="score">0</span></div>
-            <div>Эффективность: <span id="high-score">0</span></div>
+            <div>Игрок 1: <span id="score1">0</span></div>
+            <div>Игрок 2: <span id="score2">0</span></div>
         </div>
     </header>
     
     <main class="game-container">
         <canvas id="game-canvas" width="700" height="400"></canvas>
         <div class="controls">
-            <p>Управление: зажмите ЛКМ и отпустите для удара</p>
+            <p>Управление: зажмите ЛКМ и удерживайте для выбора силы удара, отпустите для удара</p>
+            <p>Текущий игрок: <span id="current-player">1</span></p>
         </div>
-        <button class="back-btn" onclick="location.href='../index.html'">Назад на главную</button>
+        <button class="back-btn" id="back-btn">Назад на главную</button>
         <div id="game-over" class="game-over" style="display:none;">
             <h2>Игра окончена!</h2>
-            <p><span id="final-score">0</span></p>
-            <button class="back-btn" onclick="restartGame()">Начать заново</button>
+            <p>Игрок 1: <span id="final-score1">0</span> очков</p>
+            <p>Игрок 2: <span id="final-score2">0</span> очков</p>
+            <p>Победитель: <span id="winner">-</span></p>
+            <button class="back-btn" id="restart-btn">Начать заново</button>
         </div>
     </main>
 
+    <script>
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.error('Ошибка в игре Бильярд:', message, 'на строке', lineno);
+            alert('Произошла ошибка в игре Бильярд. Проверьте консоль браузера для деталей.');
+            return true;
+        };
+    </script>
     <script src="../js/pool.js"></script>
 </body>
 </html>
