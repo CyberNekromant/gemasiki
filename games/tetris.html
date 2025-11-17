@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тетрис</title>
+    <title>РўРµС‚СЂРёСЃ</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>?? Тетрис</h1>
+        <h1>?? РўРµС‚СЂРёСЃ</h1>
         <div class="score-board">
-            <div>Счет: <span id="score">0</span></div>
-            <div>Рекорд: <span id="high-score">0</span></div>
+            <div>РЎС‡РµС‚: <span id="score">0</span></div>
+            <div>Р РµРєРѕСЂРґ: <span id="high-score">0</span></div>
         </div>
     </header>
     
     <main class="game-container">
         <canvas id="game-canvas" width="320" height="640"></canvas>
         <div class="controls">
-            <p>Управление: < > для движения, ^ для поворота, v для ускорения</p>
+            <p>РЈРїСЂР°РІР»РµРЅРёРµ: < > РґР»СЏ РґРІРёР¶РµРЅРёСЏ, ^ РґР»СЏ РїРѕРІРѕСЂРѕС‚Р°, v РґР»СЏ СѓСЃРєРѕСЂРµРЅРёСЏ</p>
         </div>
-        <button class="back-btn" onclick="location.href='../index.html'">Назад на главную</button>
+        <button class="back-btn" onclick="location.href='../index.html'">РќР°Р·Р°Рґ РЅР° РіР»Р°РІРЅСѓСЋ</button>
         <div id="game-over" class="game-over" style="display:none;">
-            <h2>Игра окончена!</h2>
-            <p>Ваш счет: <span id="final-score">0</span></p>
-            <button class="back-btn" onclick="restartGame()">Начать заново</button>
+            <h2>РРіСЂР° РѕРєРѕРЅС‡РµРЅР°!</h2>
+            <p>Р’Р°С€ СЃС‡РµС‚: <span id="final-score">0</span></p>
+            <button class="back-btn" onclick="restartGame()">РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ</button>
         </div>
     </main>
 

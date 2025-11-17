@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пинг-Понг</title>
+    <title>РџРёРЅРі-РџРѕРЅРі</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>?? Пинг-Понг</h1>
+        <h1>?? РџРёРЅРі-РџРѕРЅРі</h1>
         <div class="score-board">
-            <div>Счет: <span id="score">0</span></div>
-            <div>Рекорд: <span id="high-score">0</span></div>
+            <div>РЎС‡РµС‚: <span id="score">0</span></div>
+            <div>Р РµРєРѕСЂРґ: <span id="high-score">0</span></div>
         </div>
     </header>
     
     <main class="game-container">
         <canvas id="game-canvas" width="600" height="400"></canvas>
         <div class="controls">
-            <p>Управление: ^ v для движения ракетки</p>
+            <p>РЈРїСЂР°РІР»РµРЅРёРµ: ^ v РґР»СЏ РґРІРёР¶РµРЅРёСЏ СЂР°РєРµС‚РєРё</p>
         </div>
-        <button class="back-btn" onclick="location.href='../index.html'">Назад на главную</button>
+        <button class="back-btn" onclick="location.href='../index.html'">РќР°Р·Р°Рґ РЅР° РіР»Р°РІРЅСѓСЋ</button>
         <div id="game-over" class="game-over" style="display:none;">
-            <h2>Игра окончена!</h2>
-            <p>Ваш счет: <span id="final-score">0</span></p>
-            <button class="back-btn" onclick="restartGame()">Начать заново</button>
+            <h2>РРіСЂР° РѕРєРѕРЅС‡РµРЅР°!</h2>
+            <p>Р’Р°С€ СЃС‡РµС‚: <span id="final-score">0</span></p>
+            <button class="back-btn" onclick="restartGame()">РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ</button>
         </div>
     </main>
 

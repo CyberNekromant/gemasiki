@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бильярд</title>
+    <title>Р‘РёР»СЊСЏСЂРґ</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>?? Бильярд</h1>
+        <h1>?? Р‘РёР»СЊСЏСЂРґ</h1>
         <div class="score-board">
-            <div>Счет: <span id="score">0</span></div>
-            <div>Эффективность: <span id="high-score">0</span></div>
+            <div>РЎС‡РµС‚: <span id="score">0</span></div>
+            <div>Р­С„С„РµРєС‚РёРІРЅРѕСЃС‚СЊ: <span id="high-score">0</span></div>
         </div>
     </header>
     
     <main class="game-container">
         <canvas id="game-canvas" width="700" height="400"></canvas>
         <div class="controls">
-            <p>Управление: зажмите ЛКМ и отпустите для удара</p>
+            <p>РЈРїСЂР°РІР»РµРЅРёРµ: Р·Р°Р¶РјРёС‚Рµ Р›РљРњ Рё РѕС‚РїСѓСЃС‚РёС‚Рµ РґР»СЏ СѓРґР°СЂР°</p>
         </div>
-        <button class="back-btn" onclick="location.href='../index.html'">Назад на главную</button>
+        <button class="back-btn" onclick="location.href='../index.html'">РќР°Р·Р°Рґ РЅР° РіР»Р°РІРЅСѓСЋ</button>
         <div id="game-over" class="game-over" style="display:none;">
-            <h2>Игра окончена!</h2>
+            <h2>РРіСЂР° РѕРєРѕРЅС‡РµРЅР°!</h2>
             <p><span id="final-score">0</span></p>
-            <button class="back-btn" onclick="restartGame()">Начать заново</button>
+            <button class="back-btn" onclick="restartGame()">РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ</button>
         </div>
     </main>
 
